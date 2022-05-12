@@ -8,4 +8,3 @@ class BasePage():
 
     def _verify_page(self):
         return
-    asdad
