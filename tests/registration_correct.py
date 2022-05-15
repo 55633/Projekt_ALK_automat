@@ -4,7 +4,7 @@ import unittest
 
 # clasa FNV fake number validation
 
-class RegistrationTest2FNV(BaseTest):
+class RegistrationCorrect(BaseTest):
     """
     Registration Tests Correct
     """
