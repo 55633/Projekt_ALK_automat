@@ -1,0 +1,19 @@
+import unittest
+from tests.registration_test import RegistrationTest
+from tests.registrtion_test2_FNV import RegistrationTest2FNV
+
+# Pobieram testy które chcę uruchomić
+registration_test = unittest.TestLoader().loadTestsFromTestCase(RegistrationTest)
+registration_test2_FNV = unittest.TestLoader().loadTestsFromTestCase(RegistrationTest2FNV)
+
+# Lista testów
+tests_for_run = [
+    registration_test,
+    registration_test2_FNV
+]
+
+# Stwórz Test Suitę
+test_suite = unittest.TestSuite(tests_for_run)
+
+# Uruchamiam testy
+unittest.TextTestRunner().run(test_suite)

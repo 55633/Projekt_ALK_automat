@@ -19,8 +19,13 @@ class CreateAnAccountPage(BasePage):
             # Choose Mrs
             self.driver.find_element(*CreateAnAccountPageLocators.GENDER_FEMALE).click()
 
-    def enter_name(self, name):
-        pass
+    def enter_first_name(self, first_name):
+        """
+        Enters first name
+        """
+        el = self.driver.find_element(*CreateAnAccountPageLocators.FIRST_NAME)
+        el.click()
+        el.send_keys(first_name)
 
     def enter_last_name(self, last_name):
         """
@@ -157,8 +162,9 @@ class CreateAnAccountPage(BasePage):
 
 
 
-    def _verify_page(self):
+    def verify_page(self):
         """
         Verifies Create an Account Page
         """
-        pass
+        text = self.driver.find_element(*CreateAnAccountPageLocators.MY_ACCOUNT_MESSAGE)
+        return text.text

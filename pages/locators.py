@@ -37,3 +37,5 @@ class CreateAnAccountPageLocators():
     REGISTER_BTN = (By.ID, "submitAccount")
     NUMBER_OF_ERRORS_MESSAGE = (By.XPATH, '//div[@class="alert alert-danger"]/p')
     ERROR_MESSAGES = (By.XPATH, '//div[@class="alert alert-danger"]/ol/li')
+    #MY_ACCOUNT_MESSAGE = (BY.XPATH, '//p[@class="info-account"]')
+    MY_ACCOUNT_MESSAGE = (By.XPATH, "//h1[contains(text(),'My account')]")

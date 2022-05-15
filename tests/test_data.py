@@ -9,10 +9,8 @@ class TestData:
     def __init__(self):
         fake = Faker()
         self.email = fake.email()
-        if fake.boolean():
-            self.gender = "female"
-        else:
-            self.gender = "male"
+        self.gender = "male"
+        self.first_name = fake.first_name()
         self.last_name = fake.last_name()
         self.password = fake.password()
         self.birthdate = fake.date()
@@ -22,3 +20,4 @@ class TestData:
         self.state = fake.state()
         self.phone = fake.numerify("##########")
         self.alias = fake.word()
+        self.fphone = "533233455D"
