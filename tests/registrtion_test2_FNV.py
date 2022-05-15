@@ -8,13 +8,14 @@ class RegistrationTest(BaseTest):
     """
     def verify_error_messages(self, errors):
         """
-        weryfikacja błędu wyświetpanego urytkownikowi(["firstname is required"])
+        Verifies errors displayed for the user
+        verify_errors(["firstname is required"])
         """
         pass
 
     def test_no_name(self):
         """
-        TC 001 : Urzytkowmnik nie usupełnia pola name field
+        TC 001 : User does not fill the name field
         """
         home_page = self.home_page
         # 1. Kliknij Sign In
