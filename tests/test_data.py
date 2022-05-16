@@ -21,3 +21,7 @@ class TestData:
         self.phone = fake.numerify("##########")
         self.alias = fake.word()
         self.fphone = "533233455D"
+        self.logemail = "test123@o2.pl"
+        self.fakpassword = "123432"
+        self.goodpassword = "123456"
+        self.search_prod = "T-shirt"

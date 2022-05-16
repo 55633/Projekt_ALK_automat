@@ -5,6 +5,7 @@ class HomePageLocators():
     Locators used on Home Page
     """
     SIGN_IN_LINK = (By.CLASS_NAME, "login")
+    SEARCH_POINT = (By.ID, "search_query_top")
 
 class AuthenticationPageLocators():
     """
@@ -12,6 +13,9 @@ class AuthenticationPageLocators():
     """
     CREATE_AN_ACCOUNT_EMAIL = (By.ID, "email_create")
     CREATE_AN_ACCOUNT_BTN = (By.ID, "SubmitCreate")
+    SING_IN_EMAIL = (By.ID, "email")
+    SING_IN_PASSWORD = (By.ID, "passwd")
+    SING_IN_BTN = (By.ID, "SubmitLogin")
 
 class CreateAnAccountPageLocators():
     """
@@ -39,3 +43,6 @@ class CreateAnAccountPageLocators():
     ERROR_MESSAGES = (By.XPATH, '//div[@class="alert alert-danger"]/ol/li')
     #MY_ACCOUNT_MESSAGE = (BY.XPATH, '//p[@class="info-account"]')
     MY_ACCOUNT_MESSAGE = (By.XPATH, "//h1[contains(text(),'My account')]")
+
+
+

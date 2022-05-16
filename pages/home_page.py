@@ -18,6 +18,15 @@ class HomePage(BasePage):
         return AuthenticationPage(self.driver)
 
 
+    def search_area(self, item):
+        """
+          wejdźw pole wyszukiwania i znajdź produkt
+        """
+        sa = self.driver.find_element(*HomePageLocators.SEARCH_POINT)
+        sa.send_keys(item)
+
+
+
     def _verify_page(self):
         """
         Verifies Home Page
