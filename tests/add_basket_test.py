@@ -18,8 +18,14 @@ class AddBasketTest(BaseTest):
         """
         home_page = self.home_page
 
-        # wpisanie produktuw polewyszukiawnia
+        # 1. wpisanie produktuw polewyszukiawnia
         home_page.search_area(TestData.search_prod)
+
+        # 2. Klikniecie Szukaj
+        search_list = home_page.clc_search()
+
+        # wybierz pierwszy produkt
+        first_item_click = search_list.click_first_item()
 
 
 

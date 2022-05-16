@@ -6,6 +6,7 @@ class HomePageLocators():
     """
     SIGN_IN_LINK = (By.CLASS_NAME, "login")
     SEARCH_POINT = (By.ID, "search_query_top")
+    SEARCH_BTN = (By.NAME, "submit_search")
 
 class AuthenticationPageLocators():
     """
@@ -44,5 +45,6 @@ class CreateAnAccountPageLocators():
     #MY_ACCOUNT_MESSAGE = (BY.XPATH, '//p[@class="info-account"]')
     MY_ACCOUNT_MESSAGE = (By.XPATH, "//h1[contains(text(),'My account')]")
 
-
+class ProduktsLocators():
+    FIRST_PROD = (By.XPATH, "//span[contains(text(),'Quick view')]")
 

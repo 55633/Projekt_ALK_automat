@@ -25,6 +25,12 @@ class HomePage(BasePage):
         sa = self.driver.find_element(*HomePageLocators.SEARCH_POINT)
         sa.send_keys(item)
 
+    def clc_search(self):
+        """
+         kliknij szukaj
+        """
+        clk = self.driver.find_element(*HomePageLocators.SEARCH_BTN)
+        clk.click()
 
 
     def _verify_page(self):
