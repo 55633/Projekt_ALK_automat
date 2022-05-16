@@ -1,11 +1,13 @@
 from tests.base_test import BaseTest
-from tests.test_data import TestData
+
 from time import sleep
 import unittest
 
 #TC5
+from tests.test_data import TestData
 
-class AddBasketTest(BaseTest)
+
+class AddBasketTest(BaseTest):
     """
      Dodaje produkt do koszyka
     """

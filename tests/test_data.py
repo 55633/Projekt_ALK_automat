@@ -6,6 +6,9 @@ class TestData:
     """
     Test Data generator
     """
+
+
+
     def __init__(self):
         fake = Faker()
         self.email = fake.email()
@@ -25,3 +28,5 @@ class TestData:
         self.fakpassword = "123432"
         self.goodpassword = "123456"
         self.search_prod = "T-shirt"
+
+    search_prod = "T-shirt"
