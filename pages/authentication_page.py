@@ -66,7 +66,7 @@ class AuthenticationPage(BasePage):
         # Znajdź pole Hasło  w sekcji logowania
         el4 = self.driver.find_element(*AuthenticationPageLocators.SING_IN_PASSWORD)
         # wyczyść pole hasło  dopisać
-
+        el4.clear()
         # Fill this input with email
         el4.send_keys(password2)
         # znajdź przycisk Sing IN
