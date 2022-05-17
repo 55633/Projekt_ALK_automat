@@ -55,7 +55,26 @@ class AuthenticationPage(BasePage):
             error_texts.append(e.text)
         return error_texts
 
+    def log_in_pass(self, password2):
+        """
+     Logowanie za pomocą wcześniej utworzonego loginu i hasła poprawne
+        """
+        # Znajdź pole Email Adress w sekcji logowania
+        #el3 = self.driver.find_element(*AuthenticationPageLocators.SING_IN_EMAIL)
+        # Fill this input with email
+        #el3.send_keys(email)
+        # Znajdź pole Hasło  w sekcji logowania
+        el4 = self.driver.find_element(*AuthenticationPageLocators.SING_IN_PASSWORD)
+        # wyczyść pole hasło  dopisać
 
+        # Fill this input with email
+        el4.send_keys(password2)
+        # znajdź przycisk Sing IN
+        el5 = self.driver.find_element(*AuthenticationPageLocators.SING_IN_BTN)
+        # Click this button
+        el5.click()
+        # return CreateAnAccountPage instance
+        #return CreateAnAccountPage(self.driver)
 
 
 
