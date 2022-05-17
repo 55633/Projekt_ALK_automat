@@ -17,6 +17,7 @@ class AuthenticationPageLocators():
     SING_IN_EMAIL = (By.ID, "email")
     SING_IN_PASSWORD = (By.ID, "passwd")
     SING_IN_BTN = (By.ID, "SubmitLogin")
+    ERROR_MESSAGES1 = (By.XPATH, "//li[contains(text(), 'Authentication failed.')]")
 
 class CreateAnAccountPageLocators():
     """

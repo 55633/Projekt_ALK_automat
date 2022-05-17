@@ -21,9 +21,12 @@ class SingInTest(BaseTest):
         authentication_page = home_page.click_sign_in()
         # 2. Wpisz e-mail
         # 3. Kliknij przycisk „sing in”
-        create_an_account_page = authentication_page.log_in(self.test_data.logemail)
-        # 4. hasło
-       # create_an_account_page = authentication_page.log_in(self.test_data.goodpassword)
+        create_an_account_page = authentication_page.log_in(self.test_data.logemail, self.test_data.fakpassword)
+
+        # Oczekiwany rezultat:
+        # 1. Użytkownik otrzymuje komunikat „Authentication failed.”
+        errors = ["Authentication failed."]
+        self.assertCountEqual(authentication_page.error_messages_authe_texts(), errors)
 
         sleep(10)
 

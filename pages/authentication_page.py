@@ -42,6 +42,20 @@ class AuthenticationPage(BasePage):
         #return CreateAnAccountPage(self.driver)
 
 
+    def error_messages_authe_texts(self):
+        """
+        Returns all user errors
+        """
+        # Znajduję wszystkie błędy - lista WebElementów
+        errors = self.driver.find_elements(*AuthenticationPageLocators.ERROR_MESSAGES1)
+        error_texts = []
+        # Iteruję po liście webelementów
+        for e in errors:
+            # Dodaję do listy widoczny tekst
+            error_texts.append(e.text)
+        return error_texts
+
+
 
 
 
