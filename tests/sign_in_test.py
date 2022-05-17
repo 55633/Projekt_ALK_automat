@@ -28,7 +28,7 @@ class SingInTest(BaseTest):
         errors = ["Authentication failed."]
         self.assertCountEqual(authentication_page.error_messages_authe_texts(), errors)
 
-        sleep(10)
+        sleep(5)
 
 
 
