@@ -62,7 +62,7 @@ class AddBasketTest(BaseTest):
             file2.close()
 
 
-        sleep(12)
+
 
 
 
