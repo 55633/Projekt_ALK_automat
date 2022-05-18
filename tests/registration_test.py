@@ -6,11 +6,7 @@ class RegistrationTest(BaseTest):
     """
     Registration Tests
     """
-    def verify_error_messages(self, errors):
-        """
-        weryfikacja błędu wyświetlanego użytkownikowi(["firstname is required"])
-        """
-        pass
+
 
     def test_no_name(self):
         """

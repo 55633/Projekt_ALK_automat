@@ -26,8 +26,8 @@ class SingInTest(BaseTest):
         """
         TC 004.1 : Użytkownik wpisuje poprawne hasło przy logowaniu
         """
-        # kliknij w pole hasłoi wpisz poprawne hasło
-        log_an_account_page = authentication_page.log_in_pass(self.test_data.goodpassword)
+        # kliknij w pole hasło, wyczyść i wpisz poprawne hasło
+        create_an_account_page = authentication_page.log_in_pass(self.test_data.goodpassword)
 
         # Oczekiwany rezultat:
         # 1. Użytkownik zalogowany na formatce "My account"

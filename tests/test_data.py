@@ -29,4 +29,4 @@ class TestData:
         self.goodpassword = "123456"
         self.search_prod = "T-shirt"
 
-    search_prod = "T-shirt"
+    item = "T-shirt"

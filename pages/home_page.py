@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import HomePageLocators
 from pages.authentication_page import AuthenticationPage
+from pages.locators import ProduktsLocators
 
 class HomePage(BasePage):
     """
@@ -23,6 +24,7 @@ class HomePage(BasePage):
           wejdźw pole wyszukiwania i znajdź produkt
         """
         sa = self.driver.find_element(*HomePageLocators.SEARCH_POINT)
+        sa.click()
         sa.send_keys(item)
 
     def clc_search(self):
@@ -31,6 +33,11 @@ class HomePage(BasePage):
         """
         clk = self.driver.find_element(*HomePageLocators.SEARCH_BTN)
         clk.click()
+
+
+
+
+
 
 
     def _verify_page(self):

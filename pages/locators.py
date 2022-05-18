@@ -48,5 +48,8 @@ class CreateAnAccountPageLocators():
 
 
 class ProduktsLocators():
-    FIRST_PROD = (By.XPATH, "//span[contains(text(),'Quick view')]")
-
+    FIRST_PROD = (By.XPATH, "//span[contains(text(),'More')]")
+    PROD_NAME_P = (By.XPATH, "//body/div[@id='page']/div[2]/div[1]/div[3]/div[2]/ul[1]/li[1]/div[1]/div[2]/h5[1]/a[1]")
+    ADD_BTN = (By.XPATH, "//span[contains(text(),'Add to cart')]")
+    BASKET_BTN = (By.XPATH, "//body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]/span[1]")
+    IN_BASKET_PROD_NAME = (By.XPATH, "//h1[contains(text(),'Faded Short Sleeve T-shirts')]")
