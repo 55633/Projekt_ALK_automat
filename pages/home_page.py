@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import HomePageLocators
 from pages.authentication_page import AuthenticationPage
+from pages.create_an_account_page import CreateAnAccountPage
 from pages.locators import ProduktsLocators
 
 class HomePage(BasePage):

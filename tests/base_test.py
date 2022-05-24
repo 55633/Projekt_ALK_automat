@@ -1,13 +1,15 @@
 from pages.home_page import HomePage
 from tests.test_data import TestData
-
+from pages.create_an_account_page import CreateAnAccountPage
 from selenium import webdriver
 import unittest
+
 
 class BaseTest(unittest.TestCase):
     """
     Base class for each test
     """
+
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.maximize_window()

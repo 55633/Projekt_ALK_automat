@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import AuthenticationPageLocators
 from pages.create_an_account_page import CreateAnAccountPage
-
+from pages.locators import CreateAnAccountPageLocators
 
 class AuthenticationPage(BasePage):
     """
@@ -78,7 +78,12 @@ class AuthenticationPage(BasePage):
 
 
 
-
+    def verify_page(self):
+        """
+        Verifies Create an Account Page
+        """
+        text = self.driver.find_element(*CreateAnAccountPageLocators.MY_ACCOUNT_MESSAGE)
+        return text.text
 
 
 

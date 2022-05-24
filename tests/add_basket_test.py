@@ -1,10 +1,6 @@
+from pages.searched_basket_page import Searched_Basket_Page
 from tests.base_test import BaseTest
 from pages.home_page import HomePage
-from pages.searched_basket_page import Searched_Basket_Page
-from time import sleep
-import unittest
-
-#TC5
 from tests.test_data import TestData
 
 
@@ -56,10 +52,10 @@ class AddBasketTest(BaseTest):
         product2 = file2.read()
         print(f'Produkt w koszyku:', product2)
 
-         assert product1 == product2
+        assert product1 == product2
 
-            file.close()
-            file2.close()
+        file.close()
+        file2.close()
 
 
 
