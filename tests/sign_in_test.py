@@ -1,6 +1,7 @@
 from tests.base_test import BaseTest
 from pages.create_an_account_page import CreateAnAccountPage
 from time import sleep
+
 import unittest
 
 class SingInTest(BaseTest, CreateAnAccountPage):

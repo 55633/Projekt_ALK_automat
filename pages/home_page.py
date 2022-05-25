@@ -22,7 +22,7 @@ class HomePage(BasePage):
 
     def search_area(self, item):
         """
-          wejdźw pole wyszukiwania i znajdź produkt
+          wejdźw pole wyszukiwania i wklej produkt
         """
         sa = self.driver.find_element(*HomePageLocators.SEARCH_POINT)
         sa.click()
@@ -40,9 +40,3 @@ class HomePage(BasePage):
 
 
 
-
-    def _verify_page(self):
-        """
-        Verifies Home Page
-        """
-        pass
