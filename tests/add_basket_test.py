@@ -1,4 +1,5 @@
 import unittest
+
 from pages.searched_basket_page import Searched_Basket_Page
 from tests.base_test import BaseTest
 from pages.home_page import HomePage
@@ -6,7 +7,7 @@ from tests.test_data import TestData
 from pages.authentication_page import AuthenticationPage
 from pages.base_page import BasePage
 from pages.create_an_account_page import CreateAnAccountPage
-import unittest
+
 
 
 

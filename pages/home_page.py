@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import HomePageLocators
 from pages.authentication_page import AuthenticationPage
+from pages.searched_basket_page import Searched_Basket_Page
 from pages.create_an_account_page import CreateAnAccountPage
 from pages.locators import ProduktsLocators
 
@@ -36,7 +37,16 @@ class HomePage(BasePage):
         clk.click()
 
 
-
+    def click_contact_us(self):
+        """
+        Clicks Sign In link and returns AuthenticationPage instance
+        """
+        # Zlokalizuj contact us
+        el = self.driver.find_element(*HomePageLocators.CONTACT_US_LINK)
+        # Kliknij
+        el.click()
+        # Zwróć kolejną stronę (Authentication Page)
+        return Searched_Basket_Page(self.driver)
 
 
 

@@ -7,6 +7,7 @@ class HomePageLocators():
     SIGN_IN_LINK = (By.CLASS_NAME, "login")
     SEARCH_POINT = (By.ID, "search_query_top")
     SEARCH_BTN = (By.NAME, "submit_search")
+    CONTACT_US_LINK = (By.ID, "contact-link")
 
 class AuthenticationPageLocators():
     """
@@ -53,3 +54,11 @@ class ProduktsLocators():
     ADD_BTN = (By.XPATH, "//span[contains(text(),'Add to cart')]")
     BASKET_BTN = (By.XPATH, "//body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]/span[1]")
     IN_BASKET_PROD_NAME = (By.XPATH, "//h1[contains(text(),'Faded Short Sleeve T-shirts')]")
+
+class MessageLocators():
+    SUBJECT_HEADING = (By.ID, "//select[@id='id_contact']")
+    MESSAGE_EMAIL = (By.XPATH, "//input[@id='email']")
+    ID_ORDER = (By.ID, "id_order")
+    SEND_MESSAGE_BTN = (By.ID, "submitMessage")
+    MESSAGE_AREA = (By.XPATH, "//textarea[@id='message']")
+    SUCCESS_MESSAGE = (By.XPATH, "//p[contains(text(),'Your message has been successfully sent to our tea')]")
