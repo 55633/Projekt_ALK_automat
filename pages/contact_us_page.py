@@ -10,23 +10,23 @@ class ContactUsPage(BasePage):
     """
 
 
-    #def subject_heading(self, subject):
+    def subject_heading(self, subject):
 
-        #subject_heading_select = Select(self.driver.find_element(*MessageLocators.SUBJECT_HEADING)
-        #el1 = Select(self.driver.find_element(*MessageLocators.SUBJECT_HEADING)
+        el = Select(self.driver.find_element(*MessageLocators.SUBJECT_HEADING))
+        el.select_by_visible_text(subject)
 
-        #el1.select_by_visible_text(subject)
-
-
-    def put_email(self):
+    def put_email(self, email):
 
         """
         Enter email
         """
-
         el = self.driver.find_element(*MessageLocators.MESSAGE_EMAIL)
+        el.click()
+        el.send_keys(email)
 
-        return el.get_attribute("value")
+        #el = self.driver.find_element(*MessageLocators.MESSAGE_EMAIL)
+
+        #return el.get_attribute("value")
 
     def order_reference(self, order_no):
         """
@@ -56,4 +56,5 @@ class ContactUsPage(BasePage):
         Verifies Send Message
         """
         success = self.driver.find_element(*MessageLocators.SUCCESS_MESSAGE)
+        print(success.text)
         return success.text

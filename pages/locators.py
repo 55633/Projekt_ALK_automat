@@ -56,9 +56,10 @@ class ProduktsLocators():
     IN_BASKET_PROD_NAME = (By.XPATH, "//h1[contains(text(),'Faded Short Sleeve T-shirts')]")
 
 class MessageLocators():
-    SUBJECT_HEADING = (By.ID, "//select[@id='id_contact']")
+    SUBJECT_HEADING = (By.ID, "id_contact")
     MESSAGE_EMAIL = (By.XPATH, "//input[@id='email']")
     ID_ORDER = (By.ID, "id_order")
     SEND_MESSAGE_BTN = (By.ID, "submitMessage")
     MESSAGE_AREA = (By.XPATH, "//textarea[@id='message']")
-    SUCCESS_MESSAGE = (By.XPATH, "//p[contains(text(),'Your message has been successfully sent to our tea')]")
+    SUCCESS_MESSAGE = (By.CLASS_NAME, "alert-success")
+        #(By.XPATH, "//p[contains(text(),'Your message has been successfully sent to our tea')]")

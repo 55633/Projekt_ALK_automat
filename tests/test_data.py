@@ -28,5 +28,7 @@ class TestData:
         self.fakpassword = "123432"
         self.goodpassword = "123456"
         self.search_prod = "T-shirt"
-
+        self.cus_ser = "Customer service"
+        self.order_no = "123456"
+        self.text_message = "uszkodzony rękaw"
     item = "T-shirt"

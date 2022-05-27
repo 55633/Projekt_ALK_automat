@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from pages.locators import HomePageLocators
 from pages.authentication_page import AuthenticationPage
+from pages.contact_us_page import ContactUsPage
 from pages.searched_basket_page import Searched_Basket_Page
 from pages.create_an_account_page import CreateAnAccountPage
 from pages.locators import ProduktsLocators
@@ -46,7 +47,7 @@ class HomePage(BasePage):
         # Kliknij
         el.click()
         # Zwróć kolejną stronę (Authentication Page)
-        return Searched_Basket_Page(self.driver)
+        return ContactUsPage(self.driver)
 
 
 

@@ -1,5 +1,4 @@
 import unittest
-
 from pages.searched_basket_page import Searched_Basket_Page
 from tests.base_test import BaseTest
 from pages.home_page import HomePage
@@ -16,20 +15,20 @@ class AddBasketTest(BaseTest):
      Dodaje produkt do koszyka
     """
 
-    def add_basket(self):
+    def test_add_basket(self):
         """
         TC 005: dodanie do koszyka
         """
         home_page = self.home_page
 
         # 1. wpisanie produktu w polewyszukiawnia
-        home_page.search_area(TestData.item)
+        wpisanie_produktu = home_page.search_area(TestData.item)
 
         # 2. Klikniecie Szukaj
         search_list = home_page.clc_search()
 
         # 3. wybierz pierwszy produkt
-        first_prod_click = search_list.first_item()
+        first_prod_click = Searched_Basket_Page.first_item()
 
         # 4. Pobranie nazwy do późniejszego porównania
         product_name = Searched_Basket_Page.pull_product_name(self)
