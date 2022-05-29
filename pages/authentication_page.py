@@ -83,20 +83,8 @@ class AuthenticationPage(BasePage):
         Verifies Create an Account Page
         """
         text = self.driver.find_element(*CreateAnAccountPageLocators.MY_ACCOUNT_MESSAGE)
+        #print(text.text)
         return text.text
 
 
 
-    def input_email_in_create_account(self, email):
-        pass
-
-    def click_create_an_account(self):
-        pass
-
-
-
-    def _verify_page(self):
-        """
-        Verifies Authentication Page
-        """
-        pass

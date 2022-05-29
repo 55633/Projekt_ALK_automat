@@ -1,8 +1,5 @@
 from tests.base_test import BaseTest
-from time import sleep
-import unittest
 
-# clasa FNV fake number validation
 
 class RegistrationCorrect(BaseTest):
     """

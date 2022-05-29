@@ -1,18 +1,32 @@
 import unittest
 from tests.registration_test import RegistrationTest
+from tests.registrtion_test2_FNV import RegistrationTest2FNV
+from tests.registration_correct import RegistrationCorrect
+from tests.sign_in_test import SingInTest
+from tests.send_a_message_test import SendMessage
+#from tests.add_basket_test import AddBasketTest
 
-# Pobierz testy, które chcesz uruchomić
+# Pobieram testy które chcę uruchomić
 registration_test = unittest.TestLoader().loadTestsFromTestCase(RegistrationTest)
+registration_test2_FNV = unittest.TestLoader().loadTestsFromTestCase(RegistrationTest2FNV)
+registration_correct = unittest.TestLoader().loadTestsFromTestCase(RegistrationCorrect)
+sing_in_test = unittest.TestLoader().loadTestsFromTestCase(SingInTest)
+send_a_message_test = unittest.TestLoader().loadTestsFromTestCase(SendMessage)
+#add_basket_test = unittest.TestLoader().loadTestsFromTestCase(AddBasketTest)
 
-# Lista testów do uruchomienia
+
+# Lista testów
 tests_for_run = [
     registration_test,
-    # kolejny test
-    # ...
+    registration_test2_FNV,
+    registration_correct,
+    sing_in_test,
+    send_a_message_test
+     #add_basket_test
 ]
 
-# Stwórz Test Suitę łącząc testy
+# Stwórz Test Suitę
 test_suite = unittest.TestSuite(tests_for_run)
 
-# Odpal testy
+# Uruchamiam testy
 unittest.TextTestRunner().run(test_suite)

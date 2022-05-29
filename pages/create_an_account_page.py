@@ -1,5 +1,4 @@
 from selenium.webdriver.support.select import Select
-
 from pages.base_page import BasePage
 from pages.locators import CreateAnAccountPageLocators
 

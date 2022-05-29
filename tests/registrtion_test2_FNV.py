@@ -1,20 +1,10 @@
 from tests.base_test import BaseTest
-from time import sleep
-import unittest
 
-# clasa FNV fake number validation
 
 class RegistrationTest2FNV(BaseTest):
-    """
-    Registration Tests
-    """
-    def verify_error_messages(self, errors):
-        """
-        weryfikacja błędu wyświetlanego użytkownikowi(["phone_mobile is invalid.")
-        """
-        pass
 
-    def test_no_name(self):
+
+    def test_registration_faile_number(self):
         """
         TC 002: Użytkowniuk wpisuje zły numer telefonu
         """

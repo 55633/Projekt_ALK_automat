@@ -36,7 +36,6 @@ class SingInTest(BaseTest, CreateAnAccountPage):
         correct1 = 'MY ACCOUNT'
         self.assertEqual(authentication_page.verify_page(), correct1)
 
-        sleep(12)
 
 
 

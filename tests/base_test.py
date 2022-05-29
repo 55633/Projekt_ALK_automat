@@ -1,6 +1,5 @@
 from pages.home_page import HomePage
 from tests.test_data import TestData
-from pages.create_an_account_page import CreateAnAccountPage
 from selenium import webdriver
 import unittest
 

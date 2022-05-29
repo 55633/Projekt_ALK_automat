@@ -62,4 +62,3 @@ class MessageLocators():
     SEND_MESSAGE_BTN = (By.ID, "submitMessage")
     MESSAGE_AREA = (By.XPATH, "//textarea[@id='message']")
     SUCCESS_MESSAGE = (By.CLASS_NAME, "alert-success")
-        #(By.XPATH, "//p[contains(text(),'Your message has been successfully sent to our tea')]")

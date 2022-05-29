@@ -1,14 +1,11 @@
 from selenium.webdriver.support.select import Select
-
 from pages.base_page import BasePage
-from pages.locators import CreateAnAccountPageLocators
 from pages.locators import MessageLocators
 
 class ContactUsPage(BasePage):
     """
     Create an account Page Object
     """
-
 
     def subject_heading(self, subject):
 
@@ -56,5 +53,5 @@ class ContactUsPage(BasePage):
         Verifies Send Message
         """
         success = self.driver.find_element(*MessageLocators.SUCCESS_MESSAGE)
-        print(success.text)
+        #print(success.text)
         return success.text
