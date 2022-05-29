@@ -7,7 +7,7 @@ class RegistrationCorrect(BaseTest):
     """
 
 
-    def test_no_name(self):
+    def test_registrtion_ok(self):
         """
         TC 003: Użytkownik zarejestrowany
         """

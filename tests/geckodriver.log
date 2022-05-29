@@ -3840,3 +3840,84 @@ webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1653832220390	geckodriver	INFO	Listening on 127.0.0.1:47033
+1653832220396	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59511" "-no-remote" "-profile" "/tmp/rust_mozprofileT3P2Ig"
+1653832221291	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileT3P2Ig/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59511/devtools/browser/364d8f9f-9e9e-41e0-bd82-3aec6fd46f7b
+1653832222847	Marionette	INFO	Listening on port 43087
+1653832222945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1653832233975	Marionette	INFO	Stopped listening on port 43087
+1653833994666	geckodriver	INFO	Listening on 127.0.0.1:59733
+1653833994672	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46313" "-no-remote" "-profile" "/tmp/rust_mozprofileufA9O4"
+1653833995582	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileufA9O4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46313/devtools/browser/946c8795-81d9-4c7a-ac1c-fe7401ebc4d5
+1653833997146	Marionette	INFO	Listening on port 39891
+1653833997204	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+1653834011217	Marionette	INFO	Stopped listening on port 39891
+1653835010283	geckodriver	INFO	Listening on 127.0.0.1:59711
+1653835010288	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59989" "-no-remote" "-profile" "/tmp/rust_mozprofileogLHJa"
+1653835011195	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileogLHJa/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59989/devtools/browser/4169ed6f-686e-4dd7-9a1f-43a880dbec8c
+1653835012851	Marionette	INFO	Listening on port 38851
+1653835012922	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+1653835018132	Marionette	INFO	Stopped listening on port 38851
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653835207784	geckodriver	INFO	Listening on 127.0.0.1:43219
+1653835207790	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50767" "-no-remote" "-profile" "/tmp/rust_mozprofileTgJmkb"
+1653835208719	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTgJmkb/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50767/devtools/browser/a1bd57bd-1e2c-4293-a1d5-3d24ac4c2ab5
+1653835210341	Marionette	INFO	Listening on port 44505
+1653835210432	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+1653835215505	Marionette	INFO	Stopped listening on port 44505
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653835475065	geckodriver	INFO	Listening on 127.0.0.1:60939
+1653835475071	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57017" "-no-remote" "-profile" "/tmp/rust_mozprofileX6Fzh5"
+1653835475974	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileX6Fzh5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57017/devtools/browser/f66added-7536-4fc6-a931-542b6f6759d4
+1653835477534	Marionette	INFO	Listening on port 42057
+1653835477605	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+1653835483340	Marionette	INFO	Stopped listening on port 42057
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653835543384	geckodriver	INFO	Listening on 127.0.0.1:41537
+1653835543389	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47997" "-no-remote" "-profile" "/tmp/rust_mozprofileSkKABB"
+1653835544288	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileSkKABB/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47997/devtools/browser/e3cd5c60-4fd8-4ca4-955a-dcbf6e4b6edb
+1653835545825	Marionette	INFO	Listening on port 44797
+1653835545928	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://automationpractice.com"
+1653835555297	Marionette	INFO	Stopped listening on port 44797

@@ -18,9 +18,9 @@ class SendMessage(BaseTest):
         TC 005: Wysyłanie wiadomości
         """
         home_page = self.home_page
-        # 1. Kliknij Sign In
+        # 1. Kliknij Contact us
         contact_us_page = home_page.click_contact_us()
-        sleep(3)
+
         # 2. wybierz
         contact_us_page.subject_heading(self.test_data.cus_ser)
 

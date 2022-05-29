@@ -28,7 +28,7 @@ class AddBasketTest(BaseTest):
         search_list = home_page.clc_search()
 
         # 3. wybierz pierwszy produkt
-        first_prod_click = Searched_Basket_Page.first_item()
+        #first_prod_click = Searched_Basket_Page.first_item(self)
 
         # 4. Pobranie nazwy do późniejszego porównania
         product_name = Searched_Basket_Page.pull_product_name(self)

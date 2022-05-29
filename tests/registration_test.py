@@ -7,7 +7,7 @@ class RegistrationTest(BaseTest):
     """
 
 
-    def test_no_name(self):
+    def test_registration_no_firstname(self):
         """
         TC 001 : Użytkowmnik nie uzupełnia pola:First name
         """
