@@ -6,8 +6,8 @@ from tests.test_data import TestData
 from pages.authentication_page import AuthenticationPage
 from pages.base_page import BasePage
 from pages.create_an_account_page import CreateAnAccountPage
-
-
+from time import sleep
+from selenium import webdriver
 
 
 class AddBasketTest(BaseTest):
@@ -17,7 +17,7 @@ class AddBasketTest(BaseTest):
 
     def test_add_basket(self):
         """
-        TC 005: dodanie do koszyka
+        TC 006: dodanie do koszyka
         """
         home_page = self.home_page
 
@@ -28,19 +28,19 @@ class AddBasketTest(BaseTest):
         search_list = home_page.clc_search()
 
         # 3. wybierz pierwszy produkt
-        #first_prod_click = Searched_Basket_Page.first_item(self)
+        first_prod_click = Searched_Basket_Page.first_item(self)
 
         # 4. Pobranie nazwy do późniejszego porównania
         product_name = Searched_Basket_Page.pull_product_name(self)
-
+        sleep(3)
         #5. Dodanie do koszyka
 
         add_to_basket = Searched_Basket_Page.add_product(self)
-
+        sleep(3)
         # 6. przejdź do koszyka
 
         jump_to_basket = Searched_Basket_Page.jump_to_basket(self)
-
+        sleep(3)
         # 7. Zapisz nazwę produktu z koszyka do porównania
         prod_basket_name = Searched_Basket_Page.name_product_basket(self)
 
@@ -50,7 +50,7 @@ class AddBasketTest(BaseTest):
     def assertion_product_name(self):
         # pobranie i porównanie nazwy produktu z pierwszego i drugiego pliku
 
-        file = open('"pull_product_name.txt"')
+        file = open("pull_product_name.txt")
         product1 = file.read()
         print(f'Produkt zakupiony:', product1)
 

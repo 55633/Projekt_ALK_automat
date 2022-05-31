@@ -49,11 +49,11 @@ class CreateAnAccountPageLocators():
 
 
 class ProduktsLocators():
-    FIRST_PROD = (By.XPATH, "//span[contains(text(),'More')]")
-    PROD_NAME_P = (By.XPATH, "//body/div[@id='page']/div[2]/div[1]/div[3]/div[2]/ul[1]/li[1]/div[1]/div[2]/h5[1]/a[1]")
+    FIRST_PROD = (By.XPATH, "//body/div[@id='page']/div[2]/div[1]/div[3]/div[2]/ul[1]/li[1]/div[1]/div[2]/h5[1]/a[1]")
+    PROD_NAME_P = (By.XPATH, "//h1[contains(text(),'Faded Short Sleeve T-shirts')]")
     ADD_BTN = (By.XPATH, "//span[contains(text(),'Add to cart')]")
     BASKET_BTN = (By.XPATH, "//body[1]/div[1]/div[1]/header[1]/div[3]/div[1]/div[1]/div[4]/div[1]/div[2]/div[4]/a[1]/span[1]")
-    IN_BASKET_PROD_NAME = (By.XPATH, "//h1[contains(text(),'Faded Short Sleeve T-shirts')]")
+    IN_BASKET_PROD_NAME = (By.XPATH, "//tbody/tr[@id='product_1_1_0_0']/td[2]/p[1]/a[1]")
 
 class MessageLocators():
     SUBJECT_HEADING = (By.ID, "id_contact")

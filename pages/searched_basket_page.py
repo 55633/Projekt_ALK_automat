@@ -6,6 +6,8 @@ class Searched_Basket_Page(BasePage):
     def first_item(self):
         fp = self.driver.find_element(*ProduktsLocators.FIRST_PROD)
         fp.click()
+        # Zwróć kolejną stronę (Contact US)
+
 
 
     def pull_product_name(self):
@@ -30,8 +32,8 @@ class Searched_Basket_Page(BasePage):
         product_name = ni.get_attribute("innerText")
         print(f'Produkt w koszyku to:', product_name)
         file1 = open("product_name_in.txt", "w")
-        file.write(product_name)
-        file.close()
+        file1.write(product_name)
+        file1.close()
 
 
 
