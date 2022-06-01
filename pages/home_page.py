@@ -44,7 +44,7 @@ class HomePage(BasePage):
         el = self.driver.find_element(*HomePageLocators.CONTACT_US_LINK)
         # Kliknij
         el.click()
-        # Zwróć kolejną stronę (Contact US)
+        # Zwróć kolejną stronę (Contast uS)
         return ContactUsPage(self.driver)
 
 

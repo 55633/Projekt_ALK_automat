@@ -26,7 +26,7 @@ class SendMessage(BaseTest):
         #4. wpisz nr zamówinia
         contact_us_page.order_reference(self.test_data.order_no)
 
-        #5. wpisz tekstwiadomosci
+        #5. wpisz tekst wiadomosci
         contact_us_page.message_text(self.test_data.text_message)
 
         # 6. Klikni przycisk wyslij
